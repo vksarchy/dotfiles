@@ -1,0 +1,14 @@
+[General]
+Default Identity=1552181923
+
+[Identity #0]
+Default Domain=thinkyos
+Disable Fcc=false
+Disable Spam=false
+Identity=VKS
+Image Location=
+Inline Signature=
+Name=VKS
+Override Encryption Defaults=false
+Signature Enabled=false
+uoid=1552181923

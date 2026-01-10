@@ -1,0 +1,3 @@
+{"sent_at":"2025-12-31T16:48:13.918Z","sdk":{"name":"sentry.javascript.electron","version":"6.5.0"}}
+{"type":"session"}
+{"sid":"6a9cf233c7c947eb817f5ce8667cdc80","init":false,"started":"2025-12-31T07:56:01.236Z","timestamp":"2025-12-31T14:35:47.051Z","status":"crashed","errors":1,"did":"a4063cc7436e1a1812983fea70ddefd84126463b262b67a8010fad777b8aa232","duration":23985.815071582794,"attrs":{"release":"linux_app-3.6.0","environment":"production","user_agent":"Node.js/22"}}

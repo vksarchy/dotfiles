@@ -1,0 +1,7 @@
+file:///home/vks/py-playground/name_cases.py {"mtime":1766915868306,"ctime":1766915517427,"size":120,"etag":"3fce4pbpp3r","orphaned":false,"typeId":""}
+f_name = "peter"
+l_name = "parker"
+full_name = f"{f_name} {l_name}"
+print (f"Hello {full_name.upper()},Good to see you")
+
+import this 

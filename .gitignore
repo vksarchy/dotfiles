@@ -1,0 +1,19 @@
+# Secrets
+**/secrets/**
+**/*.key
+**/*.pem
+**/token*
+**/cookies*
+**/.env
+
+# Caches
+**/cache/**
+**/.cache/**
+
+# Large runtime data
+**/logs/**
+
+# Ignore embedded git repos (plugins)
+**/.git
+**/.git/**
+

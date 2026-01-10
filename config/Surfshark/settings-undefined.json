@@ -1,0 +1,23 @@
+{
+	"settings_tcp": true,
+	"settings_cleanweb": false,
+	"settings_protocol": "auto",
+	"autoconnect_location": {
+		"type": "suggest",
+		"target": "fastest"
+	},
+	"autoconnect_enabled": false,
+	"autoconnect_trusted_physical_connection": [],
+	"locations_favorites": [],
+	"locations_expanded": [],
+	"recents": [],
+	"quick_connect": {
+		"type": "suggest",
+		"target": "fastest"
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "3.6.0"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/vks/Downloads/kanata-tray-linux
+Icon=application-x-executable
+Name=kanata-tray-linux
+Type=Application
+X-KDE-AutostartScript=true

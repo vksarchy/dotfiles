@@ -1,0 +1,11 @@
+[AC][Performance]
+PowerProfile=balanced
+
+[AC][SuspendAndShutdown]
+AutoSuspendIdleTimeoutSec=1800
+
+[Battery][SuspendAndShutdown]
+AutoSuspendIdleTimeoutSec=1800
+
+[LowBattery][SuspendAndShutdown]
+AutoSuspendIdleTimeoutSec=900

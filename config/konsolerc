@@ -1,0 +1,15 @@
+[Desktop Entry]
+DefaultProfile=Sip.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+MenuBar=Enabled
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+CloseAllTabs=true
+
+[UiSettings]
+ColorScheme=

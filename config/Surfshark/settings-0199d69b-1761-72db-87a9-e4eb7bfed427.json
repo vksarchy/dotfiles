@@ -1,0 +1,116 @@
+{
+	"settings_tcp": true,
+	"settings_cleanweb": false,
+	"settings_protocol": "auto",
+	"autoconnect_location": {
+		"type": "suggest",
+		"target": "fastest"
+	},
+	"autoconnect_enabled": false,
+	"autoconnect_trusted_physical_connection": [],
+	"locations_favorites": [
+		"generic-US-fastest"
+	],
+	"locations_expanded": [],
+	"recents": [
+		{
+			"country": "Thailand",
+			"countryCode": "TH",
+			"region": "Asia Pacific",
+			"regionCode": "AP",
+			"load": 35,
+			"createdAt": "2019-04-24T09:50:58+00:00",
+			"updatedAt": "2026-01-10T02:54:57+00:00",
+			"id": "115cac30-9be0-4536-b761-c1d341970b78",
+			"coordinates": {
+				"longitude": 100.523186,
+				"latitude": 13.736717
+			},
+			"type": "generic",
+			"location": "Bangkok",
+			"connectionName": "th-bkk.prod.surfshark.com",
+			"pubKey": "OoFY46j/w4uQFyFu/OQ/h3x+ymJ1DJ4UR1fwGNxOxk0=",
+			"tags": [],
+			"transitCluster": null,
+			"flagUrl": "https://cdn.ss-cdn.com/assets/flags/TH.png"
+		},
+		{
+			"country": "United States",
+			"countryCode": "US",
+			"region": "The Americas",
+			"regionCode": "AM",
+			"load": 35,
+			"createdAt": "2019-08-08T13:09:35+00:00",
+			"updatedAt": "2026-01-02T23:57:38+00:00",
+			"id": "9e8e411b-54a2-44b3-a410-ceb3a44f408b",
+			"coordinates": {
+				"longitude": -121.315308,
+				"latitude": 44.058174
+			},
+			"type": "generic",
+			"location": "Bend",
+			"connectionName": "us-bdn.prod.surfshark.com",
+			"pubKey": "YaxEFQHtwF/EGvf5s/aLlX5Jr0djKTV5oNcAcIwAz0E=",
+			"tags": [
+				"p2p"
+			],
+			"transitCluster": null,
+			"flagUrl": "https://cdn.ss-cdn.com/assets/flags/US.png"
+		},
+		{
+			"country": "United States",
+			"countryCode": "US",
+			"region": "The Americas",
+			"regionCode": "AM",
+			"load": 17,
+			"createdAt": "2018-10-16T12:09:20+00:00",
+			"updatedAt": "2026-01-01T10:10:46+00:00",
+			"id": "16faed5a-475a-421e-b3dd-7ee70e3fc9b9",
+			"coordinates": {
+				"longitude": -80.1938889,
+				"latitude": 25.7738889
+			},
+			"type": "generic",
+			"location": "Miami",
+			"connectionName": "us-mia.prod.surfshark.com",
+			"pubKey": "KvJ/jtWb8BsBI85OcZnOIJu9kfh12mCMR4cejWFpDCc=",
+			"tags": [
+				"p2p"
+			],
+			"transitCluster": null,
+			"flagUrl": "https://cdn.ss-cdn.com/assets/flags/US.png"
+		},
+		{
+			"country": "Albania",
+			"countryCode": "AL",
+			"region": "Europe",
+			"regionCode": "EU",
+			"load": 35,
+			"createdAt": "2018-10-16T12:09:20+00:00",
+			"updatedAt": "2025-12-30T12:17:44+00:00",
+			"id": "4c333aa2-d08b-4d11-9073-61c351ce1c1e",
+			"coordinates": {
+				"longitude": 19.8188889,
+				"latitude": 41.3275
+			},
+			"type": "generic",
+			"location": "Tirana",
+			"connectionName": "al-tia.prod.surfshark.com",
+			"pubKey": "l8EOWPyzt/njrb74CADY4VOhns/TbUN6KFTbytHcFQw=",
+			"tags": [
+				"virtual"
+			],
+			"transitCluster": null,
+			"flagUrl": "https://cdn.ss-cdn.com/assets/flags/AL.png"
+		}
+	],
+	"quick_connect": {
+		"type": "suggest",
+		"target": "fastest"
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "3.6.0"
+		}
+	}
+}

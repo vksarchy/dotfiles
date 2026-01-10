@@ -1,0 +1,78 @@
+
+(defsrc
+   q    w    e    r    t       y    u    i    o    p       
+   a    s    d    f    g       h    j    k    l    ;       
+   z    x    c    v    b       n    m    .    ,    /  
+  lsft spc esc tab bspc ret
+ ) 
+
+
+(defvar
+  ;; Note: consider using different time values for your different fingers.
+  ;; For example, your pinkies might be slower to release keys and index
+  ;; fingers faster.(Corne) 
+  tap-time 200
+  hold-time 200 
+  hold-time-slow 300 
+)
+
+
+(defalias
+
+   ms↑ (movemouse-up 1 2)
+   ms← (movemouse-left 1 2)
+   ms↓ (movemouse-down 1 2)
+   ms→ (movemouse-right 1 2)
+   sm  (setmouse 1920 1080)
+   fst (movemouse-speed 50)
+ 
+  
+   lhmr (layer-toggle homerow)
+   lsym (layer-toggle symbols)
+   lmedia (layer-toggle media)
+
+   a (tap-hold $tap-time $hold-time a lctl)
+   r (tap-hold $tap-time $hold-time r lalt)
+   s (tap-hold $tap-time $hold-time s lsft)
+   t (tap-hold $tap-time $hold-time t lmet)
+   n (tap-hold $tap-time $hold-time n lmet)
+   e (tap-hold $tap-time $hold-time e lsft)
+   i (tap-hold $tap-time $hold-time i lalt)
+   o (tap-hold $tap-time $hold-time o lctl)
+
+   esc (tap-hold $tap-time $hold-time esc @lmedia )   
+   ret (tap-hold $tap-time $hold-time ret @lhmr)
+
+   d_h (tap-hold $tap-time $hold-time pgup home)
+   l_e (tap-hold $tap-time $hold-time pgdn end)
+)
+
+(deflayer colemak
+    q    w    f    p    b    j    l    u    y   esc
+    @a   @r    @s  @t   g    m   @n   @e    @i    @o
+    x    c    d    v    z    k    h	 , 	 .  	/
+  @lhmr  spc @esc   @lsym bspc ret 
+)
+
+
+(deflayer homerow 
+  S-` tab  A-x   XX   XX    XX  XX C-S-tab C-tab XX
+  M-tab  XX      XX    XX  XX left  up down  right  C-1
+  XX   XX   XX     XX    XX    XX   XX  C-bspc  A-bspc   S-/
+  XX XX spc ret  XX XX
+)
+
+(deflayer symbols
+  1   2   3     4     5   6   7   8     9   0
+  [   ]   S-[   S-]   `   ;   S-;   -   =    +  
+  XX XX   S-\   \     XX  XX   XX   XX   XX  XX
+  XX XX F2 XX  XX  XX
+) 
+
+(deflayer media
+  XX   🔇   🔈−  🔈+   XX    XX   ◀◀  @ms↑  ▶▶ XX
+  XX  C-S-c  C-c   C-v  C-S-v     XX    @ms←  @ms↓   @ms→  @ms→
+  XX   XX    XX    XX    XX     XX     mltp   mmtp   mrtp     XX 
+  XX XX ▶⏸ XX XX XX
+) 
+

@@ -1,0 +1,99 @@
+{
+	"settings_autolaunch": true,
+	"settings_autolaunch_minimized": false,
+	"settings_theme": "system",
+	"settings_language": "en",
+	"device_id": "702cd72c-79ec-4963-8ae6-16b6b5811dd9",
+	"sentry_id": "0d7ba8e5-8f0f-41ac-a141-748e1734fb6d",
+	"info": {
+		"1": "5012ef32-7013-43a4-9fc1-96a9100e0558",
+		"3": "3.6.0",
+		"4": "cachyos rolling",
+		"5": "702cd72c-79ec-4963-8ae6-16b6b5811dd9",
+		"10": 89,
+		"16": 0,
+		"18": 0,
+		"20": "fastest",
+		"21": 0,
+		"22": "fastest",
+		"28": "auto",
+		"32": "follow_system",
+		"38": 0,
+		"40": 0,
+		"74": 0
+	},
+	"killswitch": false,
+	"dialog_2": true,
+	"internet": null,
+	"loc_change": "9f57885df76bed192c673cb0cab7af47ed388cb72b25c2708a11c81104dd2eb3",
+	"vpn_events": [
+		{
+			"name": "VpnConnectIntent",
+			"payload": {
+				"app_language": "en",
+				"app_version": "3.6.0",
+				"session_protocol_preference": "auto",
+				"session_bypass_address_count": null,
+				"session_bypass_app_count": null,
+				"session_cleanweb": false,
+				"session_invisible_on_lan": null,
+				"session_killswitch": false,
+				"session_noborders": null,
+				"session_route_app_count": null,
+				"session_sdn_unit": null,
+				"session_id": "97084423-9aaa-49fc-8222-211f0f0d6aeb",
+				"vpn_entry_country_code": "TH",
+				"vpn_entry_location_name": "Bangkok",
+				"vpn_entry_server_hostname": "th-bkk.prod.surfshark.com",
+				"vpn_exit_country_code": "TH",
+				"vpn_exit_location_name": "Bangkok",
+				"vpn_exit_server_hostname": "th-bkk.prod.surfshark.com",
+				"source_city": "Salem",
+				"source_country_code": "IN",
+				"source_region": "Tamil Nadu",
+				"source_isp": "Broadband Multiplay Project, O/o DGM BB, NOC BSNL Bangalore",
+				"source_restricted": false,
+				"connect_intent_trigger": "quick_connect"
+			},
+			"timestamp": 1768013872223
+		},
+		{
+			"name": "PQSEnabled",
+			"timestamp": 1768013872599
+		},
+		{
+			"name": "VpnConnectTrial",
+			"payload": {
+				"vpn_server_ip": "103.176.152.22",
+				"protocol": "wireguard",
+				"vpn_error_code": "OK"
+			},
+			"timestamp": 1768013872795
+		},
+		{
+			"name": "PQSEnabled",
+			"timestamp": 1768013875473
+		},
+		{
+			"name": "VpnConnected",
+			"payload": {
+				"connected_protocol": "wireguard",
+				"vpn_entry_server_ip": "103.176.152.22"
+			},
+			"timestamp": 1768013875491
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "disconnect_button"
+			},
+			"timestamp": 1768014174391
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768014177172
+		}
+	],
+	"vpn_sessions": [],
+	"forced-connection": true
+}
