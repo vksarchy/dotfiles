@@ -1,0 +1,40 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/PyCharmMiscProject">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Welcome – Welcome to PyCharm" projectWorkspaceId="384VN18YTGakMRLArgOQiP93694">
+              <option name="activationTimestamp" value="1768058828663" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-253.29346.142" />
+              <option name="buildTimestamp" value="1766037960000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="10" y="42" width="1896" height="1144" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1768058789376" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/py-playground">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="384VT7ZCOD2Q2yKfLZD3Yxl1HEY">
+              <option name="activationTimestamp" value="1768063883909" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-253.29346.142" />
+              <option name="buildTimestamp" value="1766037960000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1768058835122" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/py-playground" />
+  </component>
+</application>

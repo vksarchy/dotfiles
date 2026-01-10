@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+import sys
+import subprocess
+
+BOOKS = {
+    "pcc": "/home/vks/Downloads/Programmig/Python Crash Course, 3rd Edition - A Hands-On, Project-Based -- Eric Matthes -- ( WeLib.org ).pdf",
+    "fluent": "/home/vks/Downloads/Programmig/Fluent Python, 2nd Edition - Luciano Ramalho.pdf",
+}
+
+if len(sys.argv) < 2:
+    print("Usage: book <name>")
+    print("Available books:")
+    for k in BOOKS:
+        print(f"  - {k}")
+    sys.exit(1)
+
+key = sys.argv[1]
+
+if key not in BOOKS:
+    print(f"Unknown book: {key}")
+    sys.exit(1)
+
+subprocess.Popen(["zathura", BOOKS[key]])

@@ -1,0 +1,73 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Copy">
+      <i c="1" l="1768062757942" />
+    </e>
+    <e n="ChangeIdeScale">
+      <i c="1" l="1768059041772" />
+    </e>
+    <e n="CollapseRegion">
+      <i c="1" l="1768058882929" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="78" l="1768063601969" />
+    </e>
+    <e n="EditorDown">
+      <i c="4" l="1768063604361" />
+    </e>
+    <e n="EditorLeft">
+      <i c="2" l="1768063598946" />
+    </e>
+    <e n="EditorPaste">
+      <i c="2" l="1768063462041" />
+    </e>
+    <e n="EditorRight">
+      <i c="7" l="1768063599631" />
+    </e>
+    <e n="EditorUp">
+      <i c="4" l="1768063603210" />
+    </e>
+    <e n="ExpandRegion">
+      <i c="7" l="1768058885073" />
+    </e>
+    <e n="NewElement">
+      <i c="4" l="1768063442107" />
+    </e>
+    <e n="NewPythonFile">
+      <i c="3" l="1768063443360" />
+    </e>
+    <e n="Register">
+      <i c="1" l="1768058790753" />
+    </e>
+    <e n="Replace">
+      <i c="1" l="1768063606761" />
+    </e>
+    <e n="SaveAll">
+      <i c="3" l="1768062727692" />
+    </e>
+    <e n="SwitchIdeScaleAction">
+      <i c="1" l="1768059041768" />
+    </e>
+    <e n="WelcomeScreen.OpenDirectoryProject">
+      <i c="1" l="1768058822470" />
+    </e>
+    <e n="com.intellij.find.SearchReplaceComponent$CloseAction">
+      <i c="1" l="1768063608001" />
+    </e>
+    <e n="com.intellij.ide.actions.QuickChangeIdeScaleAction$ChangeScaleAction">
+      <i c="1" l="1768059046313" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="2" l="1768058872154" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.ToolWindowImpl$RemoveStripeButtonAction">
+      <i c="1" l="1768058895566" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="2" l="1768059030562" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1768058893270" />
+    </e>
+  </component>
+</application>

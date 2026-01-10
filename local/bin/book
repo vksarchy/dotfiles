@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+
+import subprocess
+from pathlib import Path
+import sys
+
+BOOK_DIRS = [
+    Path.home() / "Downloads",
+    Path.home() / "Documents" / "Epubs",
+]
+
+BOOK_DIRS = [d for d in BOOK_DIRS if d.exists()]
+
+if not BOOK_DIRS:
+    print("No valid book directories found.")
+    sys.exit(1)
+
+files = []
+
+for directory in BOOK_DIRS:
+    for f in directory.rglob("*"):
+        if f.is_file() and f.suffix.lower() in {".pdf", ".epub"}:
+            files.append(f)
+if not files:
+    print("No books found.")
+    sys.exit(1)
+
+files = sorted(files, key=lambda p: p.name.lower())
+
+display_map = {
+    f"{f.name}  [{f.parent.name}]": f
+    for f in files
+}
+
+fzf_input = "\n".join(display_map.keys())
+
+selected = subprocess.run(
+    ["fzf", "--prompt=Select book: "],
+    input=fzf_input,
+    text=True,
+    capture_output=True
+).stdout.strip()
+
+if not selected:
+    sys.exit(0)
+
+subprocess.Popen(["zathura", str(display_map[selected])])
