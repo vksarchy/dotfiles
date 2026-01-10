@@ -1,3 +1,13 @@
+# Runtime app data (DO NOT TRACK)
+config/discord/
+config/Slack/
+config/spotify/
+config/Google/
+config/Code/Cache/
+config/**/Cache/
+config/**/GPUCache/
+config/**/Code Cache/
+
 # Secrets
 **/secrets/**
 **/*.key
