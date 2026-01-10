@@ -55,7 +55,7 @@ def sync_tree(src, dst):
 def git_push():
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     run("git add .", cwd=REPO_DIR)
-    run(f'git commit -m "Update config: {timestamp}"', cwd=REPO_DIR)
+    run(f'git commit -m "Updated configs: {timestamp}"', cwd=REPO_DIR)
     run("git push", cwd=REPO_DIR)
 
 def main():

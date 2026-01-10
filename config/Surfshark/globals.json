@@ -10,7 +10,7 @@
 		"3": "3.6.0",
 		"4": "cachyos rolling",
 		"5": "702cd72c-79ec-4963-8ae6-16b6b5811dd9",
-		"10": 89,
+		"10": 90,
 		"16": 0,
 		"18": 0,
 		"20": "fastest",
@@ -92,6 +92,75 @@
 		{
 			"name": "VpnDisconnected",
 			"timestamp": 1768014177172
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "os_shutdown"
+			},
+			"timestamp": 1768046295507
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768046295507
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "app_close"
+			},
+			"timestamp": 1768046295528
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "app_close"
+			},
+			"timestamp": 1768046359449
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768046362042
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "os_shutdown"
+			},
+			"timestamp": 1768047217113
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768047217113
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "os_shutdown"
+			},
+			"timestamp": 1768054195012
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768054195012
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "app_close"
+			},
+			"timestamp": 1768054195035
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "os_shutdown"
+			},
+			"timestamp": 1768054459075
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768054459075
 		}
 	],
 	"vpn_sessions": [],

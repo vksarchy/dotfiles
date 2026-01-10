@@ -3,6 +3,7 @@ cwd = { fg = "#7dcfff", bold = true }
 hovered = { fg = "#c0caf5", bg = "#292e42" }
 border = { fg = "#565f89" }
 show_hidden = true
+trash = true
 
 [status]
 mode_normal = { fg = "#1a1b26", bg = "#7aa2f7" }

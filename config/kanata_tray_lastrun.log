@@ -1,15 +1,8 @@
-2025-12-30T18:54:33.607557969+05:30 INFO kanata-tray [version=v0.8.0, commit=28f2a309361e0199060b8a2f0e8122cca89239f9, build_date=Sun Nov 16 16:03:48 UTC 2025] starting
-2025-12-30T18:54:33.607690117+05:30 INFO kanata-tray config folder: /home/vks/.config/kanata-tray
-2025-12-30T18:54:33.607726863+05:30 INFO kanata-tray log folder: /home/vks/.config
-2025-12-30T18:54:33.609080395+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/default.ico
-2025-12-30T18:54:33.609355065+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/crash.ico
-2025-12-30T18:54:33.609721816+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/pause.ico
-2025-12-30T18:54:33.610121541+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/live-reload.ico
-2025-12-30T18:54:33.675768847+05:30 INFO Running preset 'Laptop'
-2025-12-30T18:54:33.676044868+05:30 INFO Running command: /home/vks/.local/share/bin/kanata_linux_cmd_allowed_x64 -c /home/vks/.config/kanata/laptop.kbd --port 5829
-2025-12-30T18:54:33.680958187+05:30 INFO Started kanata (pid=1524)
-2025-12-30T18:54:36.185069311+05:30 INFO Connected to kanata via TCP (127.0.0.1:56762)
-2025-12-30T18:55:11.64417808+05:30 INFO Clicked "Exit tray button", exiting.
-2025-12-30T18:55:11.817373019+05:30 INFO Waiting for all post-start-async hooks to exit
-2025-12-30T18:55:11.817500503+05:30 INFO All post-start-async hooks exited
-2025-12-30T18:55:17.644362005+05:30 WARN Cleanup deadline exceeded, releasing block
+2026-01-10T17:46:37.329146114+05:30 INFO kanata-tray [version=v0.8.0, commit=28f2a309361e0199060b8a2f0e8122cca89239f9, build_date=Sun Nov 16 16:03:48 UTC 2025] starting
+2026-01-10T17:46:37.329296146+05:30 INFO kanata-tray config folder: /home/vks/.config/kanata-tray
+2026-01-10T17:46:37.329334417+05:30 INFO kanata-tray log folder: /home/vks/.config
+2026-01-10T17:46:37.330057504+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/default.ico
+2026-01-10T17:46:37.330346005+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/crash.ico
+2026-01-10T17:46:37.330671706+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/pause.ico
+2026-01-10T17:46:37.331137379+05:30 INFO loading status icon: /home/vks/.config/kanata-tray/status_icons/live-reload.ico
+2026-01-10T17:46:52.741668895+05:30 INFO Clicked "Exit tray button", exiting.

@@ -36,7 +36,7 @@ waypaper --restore &
 # Tray app (SafeEyes) — AFTER snixembed
 safeeyes &
 
-#"$HOME"/.config/kanata-tray-linux &
+"$HOME"/Downloads/kanata-tray-linux &
 
 if [ ! -d "$HOME/.cache/betterlockscreen" ]; then
   betterlockscreen -u "$HOME/Pictures/wallpaper/astronaut_jellyfish.jpg" &

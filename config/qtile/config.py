@@ -76,7 +76,7 @@ keys = [
     Key([mod], "d", lazy.spawn("rofi -show drun -show-icons"), desc='Run Launcher'),
     Key([mod], "b", lazy.spawn(myBrowser), desc='Web browser'),
     Key([mod, "shift"], "u", lazy.spawn("blueman-manager"), desc="Bluetooth manager"),
-    Key([mod], "o", lazy.spawn(myFile), desc='File Manager'),
+    Key([mod], "y", lazy.spawn(myFile), desc='File Manager'),
     Key([mod, "shift"], "b", lazy.hide_show_bar(position='all'), desc="Toggles the bar to show/hide"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
@@ -85,6 +85,29 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod, "shift"], "T", lazy.spawn("conky-toggle"), desc="Conky toggle on/off"),
 
+    # Touchpad + TrackPoint settings
+Key(
+    [mod], "z",
+    lazy.spawn(
+        "bash -c '"
+        "TPAD=\"SYNA801A:00 06CB:CEC6 Touchpad\"; "
+        "TPNT=\"TPPS/2 Elan TrackPoint\"; "
+        "STATE=$(xinput list-props \"$TPAD\" | awk \"/Device Enabled/ {print \\$4}\"); "
+        "if [ \"$STATE\" = \"1\" ]; then "
+        "xinput disable \"$TPAD\"; "
+        "xinput disable \"$TPNT\"; "
+        "pkill unclutter; "
+        "unclutter -idle 0 & "
+        "notify-send \"Input OFF + Cursor Hidden\"; "
+        "else "
+        "xinput enable \"$TPAD\"; "
+        "xinput enable \"$TPNT\"; "
+        "pkill unclutter; "
+        "notify-send \"Input ON + Cursor Visible\"; "
+        "fi'"
+    ),
+    desc="Toggle input devices and mouse pointer"
+),
     # Volume controls (PipeWire)
 # Volume Up
 Key(
@@ -210,7 +233,7 @@ Key(
     # Emacs programs launched using the key chord SUPER+e followed by 'key'
     KeyChord([mod],"e", [
         Key([], "e", lazy.spawn(myEmacs), desc='Emacs Dashboard'),
-        #Key([], "a", lazy.spawn(myEmacs + "--eval '(emms-play-directory-tree \"~/Music/\")'"), desc='Emacs EMMS'),
+        Key([], "a", lazy.spawn(myEmacs + "--eval '(emms-play-directory-tree \"~/Music/\")'"), desc='Emacs EMMS'),
         Key([], "b", lazy.spawn(myEmacs + "--eval '(ibuffer)'"), desc='Emacs Ibuffer'),
         Key([], "d", lazy.spawn(myEmacs + "--eval '(dired nil)'"), desc='Emacs Dired'),
         Key([], "i", lazy.spawn(myEmacs + "--eval '(erc)'"), desc='Emacs ERC'),

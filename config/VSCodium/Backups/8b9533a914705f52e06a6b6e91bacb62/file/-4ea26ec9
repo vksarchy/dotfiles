@@ -1,0 +1,59 @@
+file:///home/vks/py-playground/bulk_rename.py {"mtime":1768039804962,"ctime":1768039804962,"size":1368,"etag":"3fears4l81d4","orphaned":false,"typeId":""}
+import json
+from pathlib import Path
+
+# -------- CONFIG --------
+TARGET_DIR = Path("/home/vks/Pictures/wallpaper/")  # CHANGE THIS
+PREFIX = "Pallavi_"
+SUFFIX = ""
+REPLACE_SPACES = True
+DRY_RUN = True
+
+ALLOWED_EXTENSIONS = {".jpg", ".png"}  # lowercase only
+# ------------------------
+
+def generate_new_name(file: Path) -> str:
+    name = file.stem
+    ext = file.suffix.lower()
+
+    if REPLACE_SPACES:
+        name = name.replace(" ", "_")
+
+    return f"{PREFIX}{name}{SUFFIX}{ext}"
+
+
+def main():
+    print(f"Scanning: {TARGET_DIR}\n")
+
+    rename_map = {}
+
+    for item in TARGET_DIR.iterdir():
+        if not item.is_file():
+            continue
+
+        if item.suffix.lower() not in ALLOWED_EXTENSIONS:
+            continue
+
+        new_name = generate_new_name(item)
+        new_path = item.with_name(new_name)
+
+        if new_path.exists():
+            print(f"⚠️ SKIP (exists): {new_name}")
+            continue
+
+        print(f"{item.name}  ->  {new_name}")
+        rename_map[item.name] = new_name
+
+        if not DRY_RUN:
+            item.rename(new_path)
+
+    if rename_map:
+        with open("rename_undo.json", "w") as f:
+            json.dump(rename_map, f, indent=2)
+
+        print("\n📝 Undo file saved: rename_undo.json")
+
+    if DRY_RUN:
+        print("\n⚠️ DRY RUN ENABLED — No files were renamed")
+if __name__ == "__main__":
+    main()
