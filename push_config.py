@@ -9,9 +9,12 @@ import stat
 
 HOME = Path.home()
 SOURCE_CONFIG = HOME / ".config"
+
 REPO_DIR = HOME / "dotfiles"
 DEST_CONFIG = REPO_DIR / "config"
 
+SOURCE_BIN = HOME / ".local" / "bin"
+DEST_BIN = REPO_DIR / "local" / "bin"
 
 def run(cmd, cwd=None):
     print(f"▶ {cmd}")
@@ -31,19 +34,22 @@ def ignore_special_files(src, names):
     return ignored
 
 
-def sync_config():
-    if DEST_CONFIG.exists():
-        shutil.rmtree(DEST_CONFIG)
+def sync_tree(src, dst):
+    if not src.exists():
+        return
+
+    if dst.exists():
+        shutil.rmtree(dst)
 
     shutil.copytree(
-        SOURCE_CONFIG,
-        DEST_CONFIG,
+        src,
+        dst,
         symlinks=True,
         ignore=ignore_special_files,
         ignore_dangling_symlinks=True,
     )
 
-    print("✔ Synced ~/.config (sockets skipped)")
+    print(f"✔ Synced {src} → {dst}")
 
 
 def git_push():
@@ -52,11 +58,11 @@ def git_push():
     run(f'git commit -m "Update config: {timestamp}"', cwd=REPO_DIR)
     run("git push", cwd=REPO_DIR)
 
-
 def main():
-    sync_config()
+    sync_tree(SOURCE_CONFIG, DEST_CONFIG)
+    sync_tree(SOURCE_BIN, DEST_BIN)
     git_push()
-    print("🚀 Config pushed to GitHub successfully")
+    print("🚀 Dotfiles pushed successfully")
 
 
 if __name__ == "__main__":
