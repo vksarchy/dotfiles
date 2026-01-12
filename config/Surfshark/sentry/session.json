@@ -1,1 +1,1 @@
-{"sid":"694c44ea2f9e4aec8b5028b72d9bded6","init":false,"timestamp":1768212219.4697673,"started":1768212217.7582717,"duration":1.7114956378936768,"status":"ok","errors":1,"ignoreDuration":false,"did":"5deff03ea3391bd227ed54e7971367cef654b342d21aa82f397053e081b53b6b","userAgent":"Node.js/22","release":"linux_app-3.6.0","environment":"production"}
+{"sid":"549d022c88784fe68df9963fb6cbd00c","init":true,"timestamp":1768226512.2001657,"started":1768226512.2000034,"duration":0.00016236305236816406,"status":"ok","errors":0,"ignoreDuration":false,"userAgent":"Node.js/22"}

@@ -156,6 +156,24 @@
 				"disconnect_intent_trigger": "app_close"
 			},
 			"timestamp": 1768212179328
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "os_shutdown"
+			},
+			"timestamp": 1768226468924
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768226468924
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "app_close"
+			},
+			"timestamp": 1768226468952
 		}
 	],
 	"vpn_sessions": [],
