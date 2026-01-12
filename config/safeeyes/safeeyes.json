@@ -1,7 +1,7 @@
 {
     "allow_postpone": false,
-    "long_break_duration": 80,
-    "long_break_interval": 80,
+    "long_break_duration": 30,
+    "long_break_interval": 120,
     "long_breaks": [
         {
             "name": "Walk for a while"
@@ -111,10 +111,10 @@
     ],
     "postpone_duration": 5,
     "postpone_unit": "minutes",
-    "pre_break_warning_time": 10,
+    "pre_break_warning_time": 5,
     "random_order": true,
     "short_break_duration": 20,
-    "short_break_interval": 20,
+    "short_break_interval": 25,
     "short_breaks": [
         {
             "name": "Gently close your eyes"

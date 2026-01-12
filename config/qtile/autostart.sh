@@ -32,6 +32,7 @@ conky -c "$HOME"/.config/conky/qtile/01/"$COLORSCHEME".conf || echo "Couldn't st
 sleep 1
 yes | /usr/bin/emacs --daemon &
 waypaper --restore &
+redshift &
 
 # Tray app (SafeEyes) — AFTER snixembed
 safeeyes &

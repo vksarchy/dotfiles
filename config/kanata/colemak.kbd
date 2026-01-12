@@ -20,15 +20,15 @@
 ;; Variables
 (defvar
  tap-higher 400
- tap-time 300
- hold-time 300
+ tap-time 200
+ hold-time 200
  chord-time 60
  subl-time 200
  tmux-delay 40
 )
 
 (defalias
-  msymb (tap-hold-press $tap-time $hold-time rmet (layer-while-held symbols))
+  msymb (tap-hold-press $tap-time $hold-time lmet (layer-while-held symbols))
   mlctl (tap-hold $tap-time $hold-time esc lctl)
 )
 
@@ -44,18 +44,18 @@
 (deflayer main
   esc    f1  f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv    1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab    q    w    f    p    b    j    l    u    y    ;    [    ]    \
+  tab    q    w    f    p    b    z    l    u    y    ;    [    ]    \
   @mlctl   a    r    s    t    g    m    n    e    i    o    '    ret
-  lsft   x    c    d    v    z    k    h    ,    .    /    ▲   rsft
-  @mlctl lmet lalt           spc         rmet ralt ◀  ▼    ▶
+  lsft   x    c    d    v    j    k    h    ,    .    /    ▲   rsft
+  lctl lmet lalt           spc         @msymb ralt ◀  ▼    ▶
 )
 
 (deflayer symbols
   esc    f1  f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv    1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab    1    2    3    4    5    6    7    8    9    0    -    =    \
+  tab    1    2    3    4    5    6    7    S-;    9    0    -    =    \
   lctl   a    r    S-9  S-0    g    m    [    ]    i    o    '    ret
   lsft   x    c    d    =    z    k    S-1    ,    .    /    ▲   rsft
-  lctl  lalt @msymb          spc       rmet ralt ◀  ▼    ▶
+  lctl  lalt lmet          spc       rmet ralt ◀  ▼    ▶
 )
 

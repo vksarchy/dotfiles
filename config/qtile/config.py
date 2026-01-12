@@ -32,6 +32,7 @@
 # SOFTWARE.
 
 import os
+os.environ["PATH"] += ":/usr/sbin:/home/vks/.local/bin"
 os.environ["QT_STYLE_OVERRIDE"] = "kvantum"
 import subprocess
 from libqtile import bar, extension, hook, layout, qtile, widget
@@ -47,6 +48,7 @@ myTerm = "alacritty"      # My terminal of choice
 myBrowser = "firefox"       # My browser of choice
 myEmacs = "emacsclient -c -a 'emacs' " # The space at the end is IMPORTANT!
 myFile = "pcmanfm-qt" # My file manager of choice
+myEditor = "neovide"
 
 # Allows you to input a name when adding treetab section.
 @lazy.layout.function
@@ -73,16 +75,18 @@ def maximize_by_switching_layout(qtile):
 keys = [
     # The essentials
     Key([mod], "Return", lazy.spawn(myTerm), desc="Terminal"),
-    Key([mod], "d", lazy.spawn("rofi -show drun -show-icons"), desc='Run Launcher'),
-    Key([mod], "b", lazy.spawn(myBrowser), desc='Web browser'),
+    Key([mod], "v", lazy.spawn("neovide"), desc="Launch Neovide"),
+    Key([mod], "space", lazy.spawn("rofi -show drun -show-icons"), desc='Run Launcher'),
+    Key([mod], "a", lazy.spawn(myBrowser), desc='Web browser'),
     Key([mod, "shift"], "u", lazy.spawn("blueman-manager"), desc="Bluetooth manager"),
     Key([mod], "y", lazy.spawn(myFile), desc='File Manager'),
+    Key([mod], "s", lazy.spawn("ghostty -e book-launch"), desc="Open book picker"),
     Key([mod, "shift"], "b", lazy.hide_show_bar(position='all'), desc="Toggles the bar to show/hide"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "shift"], "q", lazy.spawn("dm-logout -r"), desc="Logout menu"),
-    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+   # Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod, "shift"], "T", lazy.spawn("conky-toggle"), desc="Conky toggle on/off"),
 
     # Touchpad + TrackPoint settings
@@ -166,7 +170,7 @@ Key(
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
+    Key([mod], "tab", lazy.layout.next(), desc="Move window focus to other window"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
@@ -195,7 +199,7 @@ Key(
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([mod, "shift"], "space", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
+    Key([mod, "shift"], "tab", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
 
     # Treetab prompt
     Key([mod, "shift"], "a", add_treetab_section, desc='Prompt to add new section in treetab'),
@@ -395,7 +399,7 @@ widget_defaults = dict(
     fontsize = 15,
     padding = 0,
     #background=colors[0]
-    background="#00000080"
+    background="#00000090"
 )
 
 extension_defaults = widget_defaults.copy()
@@ -442,7 +446,7 @@ def init_widgets_list():
                  progs = [("🌐", "firefox", "Firefox web browser"),
                           ("🎸", "alacritty -e termusic", "Termusic"),
                           ("📁", "pcmanfm-qt", "PCManFM file manager"),
-                          ("🚀", "vlc", "VLC media player")
+                          ("📚", "alacritty -e book-launch", "eBook Reader")
                          ], 
                  fontsize = 13,
                  padding = 5,

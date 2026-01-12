@@ -10,9 +10,12 @@
 		"3": "3.6.0",
 		"4": "cachyos rolling",
 		"5": "702cd72c-79ec-4963-8ae6-16b6b5811dd9",
-		"10": 90,
+		"10": 92,
+		"13": "th-bkk.prod.surfshark.com",
+		"15": "wireguard",
 		"16": 0,
 		"18": 0,
+		"19": 0,
 		"20": "fastest",
 		"21": 0,
 		"22": "fastest",
@@ -41,126 +44,118 @@
 				"session_noborders": null,
 				"session_route_app_count": null,
 				"session_sdn_unit": null,
-				"session_id": "97084423-9aaa-49fc-8222-211f0f0d6aeb",
+				"session_id": "ccb866a6-6c6e-4ca0-95f9-0df1883c973b",
 				"vpn_entry_country_code": "TH",
 				"vpn_entry_location_name": "Bangkok",
 				"vpn_entry_server_hostname": "th-bkk.prod.surfshark.com",
 				"vpn_exit_country_code": "TH",
 				"vpn_exit_location_name": "Bangkok",
 				"vpn_exit_server_hostname": "th-bkk.prod.surfshark.com",
-				"source_city": "Salem",
+				"source_city": "Tharangambadi",
 				"source_country_code": "IN",
 				"source_region": "Tamil Nadu",
 				"source_isp": "Broadband Multiplay Project, O/o DGM BB, NOC BSNL Bangalore",
 				"source_restricted": false,
-				"connect_intent_trigger": "quick_connect"
+				"connect_intent_trigger": "recent_location"
 			},
-			"timestamp": 1768013872223
+			"timestamp": 1768156350634
 		},
 		{
 			"name": "PQSEnabled",
-			"timestamp": 1768013872599
+			"timestamp": 1768156351979
 		},
 		{
 			"name": "VpnConnectTrial",
 			"payload": {
-				"vpn_server_ip": "103.176.152.22",
+				"vpn_server_ip": "103.176.152.49",
 				"protocol": "wireguard",
 				"vpn_error_code": "OK"
 			},
-			"timestamp": 1768013872795
+			"timestamp": 1768156352021
 		},
 		{
 			"name": "PQSEnabled",
-			"timestamp": 1768013875473
+			"timestamp": 1768156355248
 		},
 		{
 			"name": "VpnConnected",
 			"payload": {
 				"connected_protocol": "wireguard",
-				"vpn_entry_server_ip": "103.176.152.22"
+				"vpn_entry_server_ip": "103.176.152.49"
 			},
-			"timestamp": 1768013875491
-		},
-		{
-			"name": "VpnDisconnectIntent",
-			"payload": {
-				"disconnect_intent_trigger": "disconnect_button"
-			},
-			"timestamp": 1768014174391
-		},
-		{
-			"name": "VpnDisconnected",
-			"timestamp": 1768014177172
+			"timestamp": 1768156355270
 		},
 		{
 			"name": "VpnDisconnectIntent",
 			"payload": {
 				"disconnect_intent_trigger": "os_shutdown"
 			},
-			"timestamp": 1768046295507
+			"timestamp": 1768158836500
 		},
 		{
 			"name": "VpnDisconnected",
-			"timestamp": 1768046295507
+			"timestamp": 1768158836500
 		},
 		{
 			"name": "VpnDisconnectIntent",
 			"payload": {
 				"disconnect_intent_trigger": "app_close"
 			},
-			"timestamp": 1768046295528
+			"timestamp": 1768158836524
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "os_shutdown"
+			},
+			"timestamp": 1768197852328
+		},
+		{
+			"name": "VpnDisconnected",
+			"timestamp": 1768197852328
 		},
 		{
 			"name": "VpnDisconnectIntent",
 			"payload": {
 				"disconnect_intent_trigger": "app_close"
 			},
-			"timestamp": 1768046359449
-		},
-		{
-			"name": "VpnDisconnected",
-			"timestamp": 1768046362042
+			"timestamp": 1768197852360
 		},
 		{
 			"name": "VpnDisconnectIntent",
 			"payload": {
 				"disconnect_intent_trigger": "os_shutdown"
 			},
-			"timestamp": 1768047217113
+			"timestamp": 1768210513923
 		},
 		{
 			"name": "VpnDisconnected",
-			"timestamp": 1768047217113
-		},
-		{
-			"name": "VpnDisconnectIntent",
-			"payload": {
-				"disconnect_intent_trigger": "os_shutdown"
-			},
-			"timestamp": 1768054195012
-		},
-		{
-			"name": "VpnDisconnected",
-			"timestamp": 1768054195012
+			"timestamp": 1768210513923
 		},
 		{
 			"name": "VpnDisconnectIntent",
 			"payload": {
 				"disconnect_intent_trigger": "app_close"
 			},
-			"timestamp": 1768054195035
+			"timestamp": 1768210513952
 		},
 		{
 			"name": "VpnDisconnectIntent",
 			"payload": {
 				"disconnect_intent_trigger": "os_shutdown"
 			},
-			"timestamp": 1768054459075
+			"timestamp": 1768212179306
 		},
 		{
 			"name": "VpnDisconnected",
-			"timestamp": 1768054459075
+			"timestamp": 1768212179306
+		},
+		{
+			"name": "VpnDisconnectIntent",
+			"payload": {
+				"disconnect_intent_trigger": "app_close"
+			},
+			"timestamp": 1768212179328
 		}
 	],
 	"vpn_sessions": [],
