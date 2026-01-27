@@ -1,0 +1,69 @@
+;; https://youtu.be/jvJ3f4HHiMY
+
+;; Kanata docs
+;; https://github.com/jtroo/kanata/blob/main/docs/config.adoc
+
+;; OS key code mappings
+;; https://github.com/jtroo/kanata/blob/main/parser/src/keys/mod.rs
+
+(defcfg
+  process-unmapped-keys yes
+  log-layer-changes no
+  danger-enable-cmd yes
+  concurrent-tap-hold yes
+
+  ;; When any non-chord activation happens, this timeout begins. Until this timeout expires
+  ;; all inputs will immediately skip chords processing and be processed by the active layer.
+  ;; chords-v2-min-idle 250
+)
+
+;; Variables
+(defvar
+ tap-higher 400
+ tap-time 200
+ hold-time 200
+ chord-time 60
+ subl-time 200
+ tmux-delay 40
+)
+
+(defalias
+  msymb (tap-hold-press $tap-time $hold-time lmet (layer-while-held symbols))
+  mlctl (tap-hold $tap-time $hold-time esc lctl)
+   a (tap-hold $tap-time $hold-time a lctl)
+   r (tap-hold $tap-time $hold-time r lalt)
+   s (tap-hold $tap-time $hold-time s lsft)
+   t (tap-hold $tap-time $hold-time t lmet)
+   n (tap-hold $tap-time $hold-time n lmet)
+   e (tap-hold $tap-time $hold-time e lsft)
+   i (tap-hold $tap-time $hold-time i lalt)
+   o (tap-hold $tap-time $hold-time o lctl)
+)
+
+(defsrc
+  esc    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv    1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab    q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps   a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft   z    x    c    v    b    n    m    ,    .    /    ▲   rsft
+  lctl  lalt lmet          spc         ralt rctl ◀    ▼    ▶
+ )
+
+(deflayer main
+  esc    f1  f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv    1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab    q    w    f    p    b    z    l    u    y    ;    [    ]    \
+  lctl   @a   @r   @s  @t    g    m   @n    @e   @i   @o    '    ret
+  lsft   x    c    d    v    j    k    h    ,    .    /    ▲   rsft
+  lctl lalt lmet           spc         @msymb ralt ◀  ▼    ▶
+)
+
+(deflayer symbols
+  esc    f1  f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv    1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab    1    2    3    4    5    6    7    C-S-tab  C-tab    0    -    =    \
+  lctl   a    r    S-9  S-0    g    m    [    ]    ▶    o    '    ret
+  lsft   x    c    d    =    z    k    S-1    ,    .    /    ▲   rsft
+  lctl  lalt lmet          spc       rmet ralt ◀  ▼    ▶
+)
+

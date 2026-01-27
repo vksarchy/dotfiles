@@ -1,0 +1,18 @@
+[mgr]
+cwd = { fg = "#7dcfff", bold = true }
+hovered = { fg = "#c0caf5", bg = "#292e42" }
+border = { fg = "#565f89" }
+show_hidden = true
+trash = true
+
+[status]
+mode_normal = { fg = "#1a1b26", bg = "#7aa2f7" }
+mode_select = { fg = "#1a1b26", bg = "#bb9af7" }
+
+[filetype]
+rules = [
+  { name = "dir", fg = "#7aa2f7" },
+  { name = "symlink", fg = "#7dcfff" },
+  { name = "image", fg = "#bb9af7" },
+  { name = "video", fg = "#f7768e" },
+]

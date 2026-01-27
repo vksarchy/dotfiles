@@ -1,0 +1,47 @@
+# Ignore everything by default
+config/*
+local/bin/*
+
+# Only track essential configs
+!config/hypr/
+!config/waybar/
+!config/rofi/
+!config/dunst/
+!config/swaylock/
+!config/kitty/
+!config/fish/
+!config/tmux/
+!config/git/
+!config/yazi/
+!config/btop/
+!config/kanata/
+
+# Doom Emacs - only custom config, not packages
+!config/doom/
+config/doom/.local/
+config/doom/.git/
+
+# Essential files
+!config/mimeapps.list
+!config/user-dirs.dirs
+
+# Only track custom scripts (no AppImages or binaries)
+!local/bin/voice-to-text
+
+# Ignore all cache, binaries, and heavy stuff
+**/__pycache__/
+**/*.pyc
+**/.cache/
+**/cache/
+**/Cache/
+**/*.log
+**/*.sock
+**/*.node
+**/*.so
+**/*.AppImage
+**/.git/
+**/leveldb/
+**/Service Worker/
+**/CacheStorage/
+**/extensions_crx_cache/
+**/component_crx_cache/
